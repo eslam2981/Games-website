@@ -55,7 +55,7 @@ html {
   --primary-color: #CBFE1C;
   --primary-color-hover: #A4CE1A;
   --secondary-color: #0B0E13;
-  --cards-color: #1E2939;
+  --cards-color: #1A1A1A;
   --form-section-color:#101624;
   --gray-color: #ABADB2;
   --white-color: #FFFFFF;
@@ -143,9 +143,9 @@ html {
 }
 
 .slider-btn:hover {
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-  background-color: rgba(255, 255, 255, 0.05);
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  background-color: rgba(255, 255, 255, 0.05) !important;
 }
 
 .game-card {
@@ -566,8 +566,16 @@ html {
   background-color: transparent !important;
 }
 
-.slider-btn:active, .slider-btn:focus {
+.slider-btn:focus {
   background-color: transparent !important;
+  border-color: #444 !important;
+  color: var(--white-color) !important;
+}
+
+.slider-btn:active, .slider-btn:active:focus {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
 }
 
 
