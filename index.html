@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
-    <title>Games website</title>
+    <title>GameArena - The Ultimate Gaming Experience & Esports Tournaments</title>
+    <meta name="description" content="Join millions of gamers worldwide in the most competitive eSports tournaments. Experience next-level gaming with cutting-edge technology at GameArena.">
   </head>
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-smooth-scroll="true" data-bs-root-margin="0px 0px -40%" tabindex="0">
+
+    <!-- Skip Navigation Link -->
+    <a href="#main-content" class="visually-hidden-focusable position-absolute top-0 start-0 p-3 bg-primary text-dark fw-bold z-3">Skip to main content</a>
 
     <!-- Start Navbar Section -->
     <nav class="navbar navbar-expand-xl fixed-top bg-body-tertiary p-3">
@@ -66,12 +70,12 @@
             class="d-flex flex-column flex-xxl-row gap-3 align-items-start px-3 px-xxl-0 mb-3 mb-xxl-0 icons fs-5"
           >
             <div class="d-flex align-items-center gap-2">
-              <i class="fa-regular fa-bell"></i>
+              <i class="fa-regular fa-bell" aria-hidden="true"></i>
               <span class="d-block d-xxl-none">Notifications</span>
             </div>
 
             <div class="d-flex align-items-center gap-2">
-              <i class="fa-regular fa-message"></i>
+              <i class="fa-regular fa-message" aria-hidden="true"></i>
               <span class="d-block d-xxl-none">Messages</span>
               <div class="shape"></div>
             </div>
@@ -93,7 +97,7 @@
     <!-- End Navbar Section -->
 
 <!-- Main -->
-  <main class="main">
+  <main class="main" id="main-content">
       <!-- Start Hero Section -->
     <header id="home" class="hero-section min-vh-100 pt-5 pb-5 d-flex align-items-center">
       <div class="container w-100">
@@ -120,7 +124,7 @@
                 type="button"
                 class="btn btn-custom-outline px-4 py-3 rounded-3 fw-bold d-flex align-items-center justify-content-center gap-2 btn-shine border-2"
               >
-                <i class="fa-solid fa-play"></i> Watch Tournaments
+                <i class="fa-solid fa-play" aria-hidden="true"></i> Watch Tournaments
               </button>
             </div>
           </div>
@@ -130,11 +134,11 @@
             <div class="position-relative w-100 text-end">
               <img
                 src="./assets/hero-img.png"
-                alt="Hero Image"
+                alt="Gamer in action showcasing the ultimate gaming experience"
                 class="img-fluid rounded-4 hero-img w-100"
               />
               <div class="position-absolute rounded-3 p-3 d-flex align-items-center gap-3 text-start hero-stats-card">
-                <i class="fa-solid fa-trophy text-primary fs-3"></i>
+                <i class="fa-solid fa-trophy text-primary fs-3" aria-hidden="true"></i>
                 <div>
                   <span class="d-block hero-stats-label small">Active Players</span>
                   <strong class="d-block text-white fs-4">2.5M+</strong>
@@ -162,7 +166,7 @@
         </div>
 
         <!-- Carousel -->
-        <div id="gamesCarousel" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+        <div id="gamesCarousel" class="carousel slide d-none d-md-block" data-bs-ride="carousel" aria-label="Our latest games carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row g-4">
@@ -178,7 +182,7 @@
                           <i class="fa-solid fa-users text-primary"></i> MULTIPLAYER
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Alien Companions</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Alien Companions</h3>
                     </div>
                   </div>
                 </div>
@@ -194,7 +198,7 @@
                           <i class="fa-solid fa-handshake text-primary"></i> CO-OP
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Neon Drifters</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Neon Drifters</h3>
                     </div>
                   </div>
                 </div>
@@ -210,7 +214,7 @@
                           <i class="fa-solid fa-user text-primary"></i> SINGLEPLAYER
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Fantasy Realm</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Fantasy Realm</h3>
                     </div>
                   </div>
                 </div>
@@ -230,7 +234,7 @@
                           <i class="fa-solid fa-globe text-primary"></i> MMO
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Space Battle</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Space Battle</h3>
                     </div>
                   </div>
                 </div>
@@ -246,7 +250,7 @@
                           <i class="fa-solid fa-coffee text-primary"></i> CASUAL
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Mystery Island</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Mystery Island</h3>
                     </div>
                   </div>
                 </div>
@@ -262,7 +266,7 @@
                           <i class="fa-solid fa-shield-halved text-primary"></i> PVP
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Ancient Warriors</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Ancient Warriors</h3>
                     </div>
                   </div>
                 </div>
@@ -282,7 +286,7 @@
                           <i class="fa-solid fa-users text-primary"></i> MULTIPLAYER
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Galactic Empire</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Galactic Empire</h3>
                     </div>
                   </div>
                 </div>
@@ -298,7 +302,7 @@
                           <i class="fa-solid fa-handshake text-primary"></i> CO-OP
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Zombie Survival</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Zombie Survival</h3>
                     </div>
                   </div>
                 </div>
@@ -314,7 +318,7 @@
                           <i class="fa-solid fa-bolt text-primary"></i> PVP
                         </span>
                       </div>
-                      <h4 class="text-white fw-bold mb-0">Neon Fighters</h4>
+                      <h3 class="text-white fw-bold mb-0 fs-4">Neon Fighters</h3>
                     </div>
                   </div>
                 </div>
@@ -324,20 +328,20 @@
           
           <!-- Controls -->
           <div class="d-flex justify-content-center align-items-center gap-3 mt-5">
-            <button class="btn rounded-circle d-flex justify-content-center align-items-center p-0 slider-btn" type="button" data-bs-target="#gamesCarousel" data-bs-slide="prev" aria-label="Previous">
-              <i class="fa-solid fa-arrow-left"></i>
+            <button class="btn rounded-circle d-flex justify-content-center align-items-center p-0 slider-btn" type="button" data-bs-target="#gamesCarousel" data-bs-slide="prev" aria-label="Previous slide">
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
             </button>
-            <button class="btn rounded-circle d-flex justify-content-center align-items-center p-0 slider-btn" type="button" data-bs-target="#gamesCarousel" data-bs-slide="next" aria-label="Next">
-              <i class="fa-solid fa-arrow-right"></i>
+            <button class="btn rounded-circle d-flex justify-content-center align-items-center p-0 slider-btn" type="button" data-bs-target="#gamesCarousel" data-bs-slide="next" aria-label="Next slide">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
             </button>
-            <button class="border-2 btn btn-custom-outline px-4 py-3 rounded-3 fw-bold ms-sm-3 text-uppercase btn-shine">
+            <button type="button" class="border-2 btn btn-custom-outline px-4 py-3 rounded-3 fw-bold ms-sm-3 text-uppercase btn-shine">
               View All Games
             </button>
           </div>
         </div>
 
         <!-- Mobile Carousel -->
-        <div id="gamesCarouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel">
+        <div id="gamesCarouselMobile" class="carousel slide d-md-none" data-bs-ride="carousel" aria-hidden="true">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row g-4">
@@ -353,7 +357,7 @@
                           <i class="fa-solid fa-users text-primary"></i> MULTIPLAYER
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Alien Companions</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Alien Companions</h3>
                     </div>
                   </div>
                 </div>
@@ -373,7 +377,7 @@
                           <i class="fa-solid fa-handshake text-primary"></i> CO-OP
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Neon Drifters</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Neon Drifters</h3>
                     </div>
                   </div>
                 </div>
@@ -393,7 +397,7 @@
                           <i class="fa-solid fa-user text-primary"></i> SINGLEPLAYER
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Fantasy Realm</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Fantasy Realm</h3>
                     </div>
                   </div>
                 </div>
@@ -413,7 +417,7 @@
                           <i class="fa-solid fa-globe text-primary"></i> MMO
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Space Battle</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Space Battle</h3>
                     </div>
                   </div>
                 </div>
@@ -433,7 +437,7 @@
                           <i class="fa-solid fa-coffee text-primary"></i> CASUAL
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Mystery Island</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Mystery Island</h3>
                     </div>
                   </div>
                 </div>
@@ -453,7 +457,7 @@
                           <i class="fa-solid fa-shield-halved text-primary"></i> PVP
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Ancient Warriors</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Ancient Warriors</h3>
                     </div>
                   </div>
                 </div>
@@ -473,7 +477,7 @@
                           <i class="fa-solid fa-users text-primary"></i> MULTIPLAYER
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Galactic Empire</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Galactic Empire</h3>
                     </div>
                   </div>
                 </div>
@@ -493,7 +497,7 @@
                           <i class="fa-solid fa-handshake text-primary"></i> CO-OP
                         </span>
                       </div>
-                      <h4 class="text-dark fw-bold mb-0">Zombie Survival</h4>
+                      <h3 class="text-dark fw-bold mb-0 fs-4">Zombie Survival</h3>
                     </div>
                   </div>
                 </div>
@@ -513,7 +517,7 @@
                           <i class="fa-solid fa-bolt text-primary"></i> PVP
                         </span>
                       </div>
-                      <h4 class="text-white fw-bold mb-0">Neon Fighters</h4>
+                      <h3 class="text-white fw-bold mb-0 fs-4">Neon Fighters</h3>
                     </div>
                   </div>
                 </div>
@@ -524,14 +528,14 @@
           <!-- Mobile Controls -->
           <div class="d-flex flex-column align-items-center gap-3 mt-5">
             <div class="d-flex justify-content-center gap-3">
-                <button class="btn rounded-circle d-flex justify-content-center align-items-center p-0 slider-btn" type="button" data-bs-target="#gamesCarouselMobile" data-bs-slide="prev" aria-label="Previous">
-                  <i class="fa-solid fa-arrow-left"></i>
+                <button class="btn rounded-circle d-flex justify-content-center align-items-center p-0 slider-btn" type="button" data-bs-target="#gamesCarouselMobile" data-bs-slide="prev" tabindex="-1">
+                  <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
                 </button>
-                <button class="btn rounded-circle d-flex justify-content-center align-items-center p-0 slider-btn" type="button" data-bs-target="#gamesCarouselMobile" data-bs-slide="next" aria-label="Next">
-                  <i class="fa-solid fa-arrow-right"></i>
+                <button class="btn rounded-circle d-flex justify-content-center align-items-center p-0 slider-btn" type="button" data-bs-target="#gamesCarouselMobile" data-bs-slide="next" tabindex="-1">
+                  <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </button>
             </div>
-            <button class="border-2 btn btn-custom-outline px-4 py-3 rounded-3 fw-bold text-uppercase btn-shine">
+            <button type="button" class="border-2 btn btn-custom-outline px-4 py-3 rounded-3 fw-bold text-uppercase btn-shine" tabindex="-1">
               View All Games
             </button>
           </div>
@@ -561,18 +565,18 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="card rounded-4 what-we-do-card d-flex flex-column align-items-center justify-content-center p-4 text-center card-h-280">
               <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4 icon-box-50">
-                 <i class="fa-solid fa-desktop fs-4 text-primary"></i>
+                 <i class="fa-solid fa-desktop fs-4 text-primary" aria-hidden="true"></i>
               </div>
-              <h5 class="text-white mb-0 heading-sm">PC Game<br>Development</h5>
+              <h4 class="text-white mb-0 heading-sm fs-5">PC Game<br>Development</h4>
             </div>
           </div>
           <!-- Mobile Game -->
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="card rounded-4 what-we-do-card d-flex flex-column align-items-center justify-content-center p-4 text-center card-h-280">
               <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4 icon-box-50">
-                 <i class="fa-solid fa-mobile-screen-button fs-4 text-primary"></i>
+                 <i class="fa-solid fa-mobile-screen-button fs-4 text-primary" aria-hidden="true"></i>
               </div>
-              <h5 class="text-white mb-0 heading-sm">Mobile Game<br>Development</h5>
+              <h4 class="text-white mb-0 heading-sm fs-5">Mobile Game<br>Development</h4>
             </div>
           </div>
           <!-- Image 1 -->
@@ -585,9 +589,9 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="card rounded-4 what-we-do-card d-flex flex-column align-items-center justify-content-center p-4 text-center card-h-280">
               <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4 icon-box-50">
-                 <i class="fa-solid fa-vr-cardboard fs-4 text-primary"></i>
+                 <i class="fa-solid fa-vr-cardboard fs-4 text-primary" aria-hidden="true"></i>
               </div>
-              <h5 class="text-white mb-0 heading-sm">AR/VR<br>Solutions</h5>
+              <h4 class="text-white mb-0 heading-sm fs-5">AR/VR<br>Solutions</h4>
             </div>
           </div>
 
@@ -595,9 +599,9 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="card rounded-4 what-we-do-card d-flex flex-column align-items-center justify-content-center p-4 text-center card-h-280">
               <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4 icon-box-50">
-                 <i class="fa-solid fa-cubes fs-4 text-primary"></i>
+                 <i class="fa-solid fa-cubes fs-4 text-primary" aria-hidden="true"></i>
               </div>
-              <h5 class="text-white mb-0 heading-sm">AR/VR<br>Design</h5>
+              <h4 class="text-white mb-0 heading-sm fs-5">AR/VR<br>Design</h4>
             </div>
           </div>
           <!-- Image 2 -->
@@ -610,18 +614,18 @@
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="card rounded-4 what-we-do-card d-flex flex-column align-items-center justify-content-center p-4 text-center card-h-280">
               <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4 icon-box-50">
-                 <i class="fa-brands fa-playstation fs-4 text-primary"></i>
+                 <i class="fa-brands fa-playstation fs-4 text-primary" aria-hidden="true"></i>
               </div>
-              <h5 class="text-white mb-0 heading-sm">PS4 Game<br>Development</h5>
+              <h4 class="text-white mb-0 heading-sm fs-5">PS4 Game<br>Development</h4>
             </div>
           </div>
           <!-- 3D Modelings -->
           <div class="col-12 col-sm-6 col-lg-3">
             <div class="card rounded-4 what-we-do-card d-flex flex-column align-items-center justify-content-center p-4 text-center card-h-280">
               <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4 icon-box-50">
-                 <i class="fa-solid fa-cube fs-4 text-primary"></i>
+                 <i class="fa-solid fa-cube fs-4 text-primary" aria-hidden="true"></i>
               </div>
-              <h5 class="text-white mb-0 heading-sm">3D<br>Modelings</h5>
+              <h4 class="text-white mb-0 heading-sm fs-5">3D<br>Modelings</h4>
             </div>
           </div>
         </div>
@@ -635,7 +639,7 @@
     <!-- End What We Do Section -->
 
     <!-- Start Marquee Logos Section -->
-    <section class="bg-secondary-custom logos-marquee py-5 position-relative overflow-hidden">
+    <section class="bg-secondary-custom logos-marquee py-5 position-relative overflow-hidden" aria-hidden="true">
       <!-- Glow -->
       <div class="radial-glow-bg position-absolute top-50 start-50 translate-middle"></div>
 
@@ -731,7 +735,7 @@
               </div>
               <div class="team-overlay position-absolute bottom-0 start-0 w-100 p-4">
                 <div class="pe-4">
-<h4 class="text-white fw-bold mb-1 fs-5">Alex "Phantom" Chen</h4>
+<h3 class="text-white fw-bold mb-1 fs-5">Alex "Phantom" Chen</h3>
                 <p class="mb-0 small fw-semibold">
                   <span class="team-role-highlight text-white">Pro Player - VALORANT</span><br>
                   <span class="text-color-aaa fw-normal">World Champion 2023</span>
@@ -749,7 +753,7 @@
               </div>
               <div class="team-overlay position-absolute bottom-0 start-0 w-100 p-4">
                 <div class="pe-4">
-<h4 class="text-white fw-bold mb-1 fs-5">Ali "Nova" Ahmed</h4>
+<h3 class="text-white fw-bold mb-1 fs-5">Ali "Nova" Ahmed</h3>
                 <p class="mb-0 small fw-semibold">
                   <span class="team-role-highlight text-white">Pro Player - League of Legends</span><br>
                   <span class="text-color-aaa fw-normal">MVP 2023 Season</span>
@@ -767,7 +771,7 @@
               </div>
               <div class="team-overlay position-absolute bottom-0 start-0 w-100 p-4">
                 <div class="pe-4">
-<h4 class="text-white fw-bold mb-1 fs-5">Marcus "Viper" Rodriguez</h4>
+<h3 class="text-white fw-bold mb-1 fs-5">Marcus "Viper" Rodriguez</h3>
                 <p class="mb-0 small fw-semibold">
                   <span class="team-role-highlight text-white">Head Coach - CS:GO</span><br>
                   <span class="text-color-aaa fw-normal">5x Major Winner</span>
@@ -785,7 +789,7 @@
               </div>
               <div class="team-overlay position-absolute bottom-0 start-0 w-100 p-4">
                 <div class="pe-4">
-<h4 class="text-white fw-bold mb-1 fs-5">Seif "Saga" Usama</h4>
+<h3 class="text-white fw-bold mb-1 fs-5">Seif "Saga" Usama</h3>
                 <p class="mb-0 small fw-semibold">
                   <span class="team-role-highlight text-white">Strategic Analyst</span><br>
                   <span class="text-color-aaa fw-normal">Data Science Expert</span>
@@ -803,7 +807,7 @@
               </div>
               <div class="team-overlay position-absolute bottom-0 start-0 w-100 p-4">
                 <div class="pe-4">
-<h4 class="text-white fw-bold mb-1 fs-5">Jake "Storm" Wilson</h4>
+<h3 class="text-white fw-bold mb-1 fs-5">Jake "Storm" Wilson</h3>
                 <p class="mb-0 small fw-semibold">
                   <span class="team-role-highlight text-white">Pro Player - Apex Legends</span><br>
                   <span class="text-color-aaa fw-normal">Rising Star 2023</span>
@@ -821,7 +825,7 @@
               </div>
               <div class="team-overlay position-absolute bottom-0 start-0 w-100 p-4">
                 <div class="pe-4">
-<h4 class="text-white fw-bold mb-1 fs-5">David "Titan" Park</h4>
+<h3 class="text-white fw-bold mb-1 fs-5">David "Titan" Park</h3>
                 <p class="mb-0 small fw-semibold">
                   <span class="team-role-highlight text-white">Team Captain - Dota 2</span><br>
                   <span class="text-color-aaa fw-normal">The International Winner</span>
@@ -839,7 +843,7 @@
               </div>
               <div class="team-overlay position-absolute bottom-0 start-0 w-100 p-4">
                 <div class="pe-4">
-<h4 class="text-white fw-bold mb-1 fs-5">Khaled "Phoenix" Ali</h4>
+<h3 class="text-white fw-bold mb-1 fs-5">Khaled "Phoenix" Ali</h3>
                 <p class="mb-0 small fw-semibold">
                   <span class="team-role-highlight text-white">Content Creator</span><br>
                   <span class="text-color-aaa fw-normal">2M+ Followers</span>
@@ -857,7 +861,7 @@
               </div>
               <div class="team-overlay position-absolute bottom-0 start-0 w-100 p-4">
                 <div class="pe-4">
-<h4 class="text-white fw-bold mb-1 fs-5">Ryan "Ghost" Miller</h4>
+<h3 class="text-white fw-bold mb-1 fs-5">Ryan "Ghost" Miller</h3>
                 <p class="mb-0 small fw-semibold">
                   <span class="team-role-highlight text-white">Team Manager</span><br>
                   <span class="text-color-aaa fw-normal">Operations Lead</span>
@@ -875,32 +879,33 @@
     <!-- Start Achievements Section -->
     <section class="achievements-bg achievements py-5 position-relative" id="achievements">
       <div class="container py-5">
+        <h2 class="visually-hidden">Achievements</h2>
         <div class="row g-4 text-center">
           <div class="col-6 col-md-3">
             <div class="stat-card p-4">
-              <div class="stat-icon mb-3"><i class="fa-solid fa-users fs-1 text-primary"></i></div>
-              <h2 class="achievements-number-style display-4 stat-number fw-bold mb-2 text-white" data-target="10" data-suffix="M+">0</h2>
+              <div class="stat-icon mb-3"><i class="fa-solid fa-users fs-1 text-primary" aria-hidden="true"></i></div>
+              <h3 class="achievements-number-style display-4 stat-number fw-bold mb-2 text-white" data-target="10" data-suffix="M+">0</h3>
               <p class="achievements-label-style fw-semibold text-uppercase">Active Players</p>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="stat-card p-4">
-              <div class="stat-icon mb-3"><i class="fa-solid fa-gamepad fs-1 text-primary"></i></div>
-              <h2 class="achievements-number-style display-4 stat-number fw-bold mb-2 text-white" data-target="50" data-suffix="+">0</h2>
+              <div class="stat-icon mb-3"><i class="fa-solid fa-gamepad fs-1 text-primary" aria-hidden="true"></i></div>
+              <h3 class="achievements-number-style display-4 stat-number fw-bold mb-2 text-white" data-target="50" data-suffix="+">0</h3>
               <p class="achievements-label-style fw-semibold text-uppercase">Games Released</p>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="stat-card p-4">
-              <div class="stat-icon mb-3"><i class="fa-solid fa-trophy fs-1 text-primary"></i></div>
-              <h2 class="achievements-number-style display-4 stat-number fw-bold mb-2 text-white" data-target="25" data-suffix="+">0</h2>
+              <div class="stat-icon mb-3"><i class="fa-solid fa-trophy fs-1 text-primary" aria-hidden="true"></i></div>
+              <h3 class="achievements-number-style display-4 stat-number fw-bold mb-2 text-white" data-target="25" data-suffix="+">0</h3>
               <p class="achievements-label-style fw-semibold text-uppercase">Esports Awards</p>
             </div>
           </div>
           <div class="col-6 col-md-3">
             <div class="stat-card p-4">
-              <div class="stat-icon mb-3"><i class="fa-solid fa-calendar-check fs-1 text-primary"></i></div>
-              <h2 class="achievements-number-style display-4 stat-number fw-bold mb-2 text-white" data-target="15" data-suffix="">0</h2>
+              <div class="stat-icon mb-3"><i class="fa-solid fa-calendar-check fs-1 text-primary" aria-hidden="true"></i></div>
+              <h3 class="achievements-number-style display-4 stat-number fw-bold mb-2 text-white" data-target="15" data-suffix="">0</h3>
               <p class="achievements-label-style fw-semibold text-uppercase">Years of Experience</p>
             </div>
           </div>
@@ -935,13 +940,13 @@
               </div>
               <div class="p-4 news-content">
                 <div class="small d-flex gap-3 mb-3 text-light">
-                  <span><i class="fa-regular fa-calendar me-2 text-primary"></i>Oct 15, 2024</span>
-                  <span><i class="fa-regular fa-comments me-2 text-primary"></i>24 Comments</span>
+                  <span><i class="fa-regular fa-calendar me-2 text-primary" aria-hidden="true"></i>Oct 15, 2024</span>
+                  <span><i class="fa-regular fa-comments me-2 text-primary" aria-hidden="true"></i>24 Comments</span>
                 </div>
-                <h4 class="text-white fw-bold mb-3 news-title fs-5">Major Content Update: The Cyber Expansion is Live</h4>
+                <h3 class="text-white fw-bold mb-3 news-title fs-5">Major Content Update: The Cyber Expansion is Live</h3>
                 <p class="text-color-aaa small news-desc">Dive into the new neon-lit city maps, unlock 5 new legendary skins, and experience the completely overhauled progression system.</p>
-                <a href="#" class="small ls-1px text-primary text-decoration-none fw-bold text-uppercase d-inline-flex align-items-center gap-2 mt-2 read-more-link">
-                  Read More <i class="fa-solid fa-arrow-right"></i>
+                <a href="#" class="small ls-1px text-primary text-decoration-none fw-bold text-uppercase d-inline-flex align-items-center gap-2 mt-2 read-more-link" aria-label="Read more about Major Content Update: The Cyber Expansion is Live">
+                  Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
@@ -957,13 +962,13 @@
               </div>
               <div class="p-4 news-content">
                 <div class="small d-flex gap-3 mb-3 text-light">
-                  <span><i class="fa-regular fa-calendar me-2 text-primary"></i>Oct 10, 2024</span>
-                  <span><i class="fa-regular fa-comments me-2 text-primary"></i>156 Comments</span>
+                  <span><i class="fa-regular fa-calendar me-2 text-primary" aria-hidden="true"></i>Oct 10, 2024</span>
+                  <span><i class="fa-regular fa-comments me-2 text-primary" aria-hidden="true"></i>156 Comments</span>
                 </div>
-                <h4 class="text-white fw-bold mb-3 news-title fs-5">World Championship 2024: Teams Announced</h4>
+                <h3 class="text-white fw-bold mb-3 news-title fs-5">World Championship 2024: Teams Announced</h3>
                 <p class="text-color-aaa small news-desc">The biggest tournament of the year is approaching. Check out the top 16 teams that qualified for the grand finals in Tokyo.</p>
-                <a href="#" class="small ls-1px text-primary text-decoration-none fw-bold text-uppercase d-inline-flex align-items-center gap-2 mt-2 read-more-link">
-                  Read More <i class="fa-solid fa-arrow-right"></i>
+                <a href="#" class="small ls-1px text-primary text-decoration-none fw-bold text-uppercase d-inline-flex align-items-center gap-2 mt-2 read-more-link" aria-label="Read more about World Championship 2024: Teams Announced">
+                  Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
@@ -979,13 +984,13 @@
               </div>
               <div class="p-4 news-content">
                 <div class="small d-flex gap-3 mb-3 text-light">
-                  <span><i class="fa-regular fa-calendar me-2 text-primary"></i>Oct 05, 2024</span>
-                  <span><i class="fa-regular fa-comments me-2 text-primary"></i>89 Comments</span>
+                  <span><i class="fa-regular fa-calendar me-2 text-primary" aria-hidden="true"></i>Oct 05, 2024</span>
+                  <span><i class="fa-regular fa-comments me-2 text-primary" aria-hidden="true"></i>89 Comments</span>
                 </div>
-                <h4 class="text-white fw-bold mb-3 news-title fs-5">Mobile Spin-off Beta Now Available Worldwide</h4>
+                <h3 class="text-white fw-bold mb-3 news-title fs-5">Mobile Spin-off Beta Now Available Worldwide</h3>
                 <p class="text-color-aaa small news-desc">Take the action with you anywhere. Join the open beta today and earn exclusive rewards for the main PC game.</p>
-                <a href="#" class="small ls-1px text-primary text-decoration-none fw-bold text-uppercase d-inline-flex align-items-center gap-2 mt-2 read-more-link">
-                  Read More <i class="fa-solid fa-arrow-right"></i>
+                <a href="#" class="small ls-1px text-primary text-decoration-none fw-bold text-uppercase d-inline-flex align-items-center gap-2 mt-2 read-more-link" aria-label="Read more about Mobile Spin-off Beta Now Available Worldwide">
+                  Read More <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
                 </a>
               </div>
             </div>
@@ -1016,10 +1021,10 @@
               <!-- Info -->
               <div class="contact-info-card p-4 py-5 rounded-4 d-flex align-items-center gap-4">
                 <div class="contact-icon-style contact-icon-wrapper fs-5 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
-                  <i class="text-black fs-4 fa-solid fa-location-dot"></i>
+                  <i class="text-black fs-4 fa-solid fa-location-dot" aria-hidden="true"></i>
                 </div>
                 <div>
-                  <h4 class="heading-font fs-5 text-white fw-bold mb-2">Our Location</h4>
+                  <h3 class="heading-font fs-5 text-white fw-bold mb-2">Our Location</h3>
                   <p class="contact-text-style small mb-0">123 Gaming Street, Esports City, EC 12345</p>
                 </div>
               </div>
@@ -1027,10 +1032,10 @@
               <!-- Info -->
               <div class="contact-info-card p-4 py-5 rounded-4 d-flex align-items-center gap-4">
                 <div class="contact-icon-style contact-icon-wrapper fs-5 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
-                  <i class="text-black fs-4 fa-solid fa-phone"></i>
+                  <i class="text-black fs-4 fa-solid fa-phone" aria-hidden="true"></i>
                 </div>
                 <div>
-                  <h4 class="heading-font fs-5 text-white fw-bold mb-2">Phone Number</h4>
+                  <h3 class="heading-font fs-5 text-white fw-bold mb-2">Phone Number</h3>
                   <p class="contact-text-style small mb-0"><a href="tel:+15551234567" class="text-reset text-decoration-none">+1 (555) 123-4567</a></p>
                 </div>
               </div>
@@ -1038,10 +1043,10 @@
               <!-- Info -->
               <div class="contact-info-card p-4 py-5 rounded-4 d-flex align-items-center gap-4">
                 <div class="contact-icon-style contact-icon-wrapper fs-5 rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
-                  <i class="text-black fs-4 fa-solid fa-envelope"></i>
+                  <i class="text-black fs-4 fa-solid fa-envelope" aria-hidden="true"></i>
                 </div>
                 <div>
-                  <h4 class="heading-font fs-5 text-white fw-bold mb-2">Email Address</h4>
+                  <h3 class="heading-font fs-5 text-white fw-bold mb-2">Email Address</h3>
                   <p class="contact-text-style small mb-0">contact@gamearena.com</p>
                 </div>
               </div>
@@ -1051,10 +1056,10 @@
                 <h3 class="contact-form-heading-style fs-3 fw-bold mb-2 text-black">Join Our Community</h3>
                 <p class="community-card-text fw-medium mb-4">Connect with us on social media for the latest updates</p>
                 <div class="d-flex gap-3">
-                  <a href="#" class="social-btn fs-5 rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-discord"></i></a>
-                  <a href="#" class="social-btn fs-5 rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-x-twitter"></i></a>
-                  <a href="#" class="social-btn fs-5 rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#" class="social-btn fs-5 rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-youtube"></i></a>
+                  <a href="#" aria-label="Join us on Discord" class="social-btn fs-5 rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-discord" aria-hidden="true"></i></a>
+                  <a href="#" aria-label="Follow us on X (Twitter)" class="social-btn fs-5 rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                  <a href="#" aria-label="Follow us on Instagram" class="social-btn fs-5 rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                  <a href="#" aria-label="Subscribe on YouTube" class="social-btn fs-5 rounded-circle d-flex align-items-center justify-content-center"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
                 </div>
               </div>
             </div>
@@ -1064,31 +1069,31 @@
           <div class="col-12 col-lg-6">
             <div class="contact-form-card p-4 p-lg-5 rounded-4 h-100">
               <h3 class="contact-form-heading-style fs-3 text-white fw-bold mb-4 pb-2">Send us a Message</h3>
-              <form>
+              <form aria-label="Contact form">
                 <div class="row g-3">
                   <div class="col-md-6">
-                    <label class="form-label-style small form-label text-white fw-bold mb-2">First Name</label>
-                    <input type="text" class="form-control custom-input py-2 px-3 border-0" placeholder="Your first name">
+                    <label for="contact-first-name" class="form-label-style small form-label text-white fw-bold mb-2">First Name</label>
+                    <input id="contact-first-name" type="text" class="form-control custom-input py-2 px-3 border-0" placeholder="Your first name" autocomplete="given-name">
                   </div>
                   <div class="col-md-6">
-                    <label class="form-label-style small form-label text-white fw-bold mb-2">Last Name</label>
-                    <input type="text" class="form-control custom-input py-2 px-3 border-0" placeholder="Your last name">
+                    <label for="contact-last-name" class="form-label-style small form-label text-white fw-bold mb-2">Last Name</label>
+                    <input id="contact-last-name" type="text" class="form-control custom-input py-2 px-3 border-0" placeholder="Your last name" autocomplete="family-name">
                   </div>
                   <div class="col-12 mt-3">
-                    <label class="form-label-style small form-label text-white fw-bold mb-2">Email Address</label>
-                    <input type="email" class="form-control custom-input py-2 px-3 border-0" placeholder="your.email@example.com">
+                    <label for="contact-email" class="form-label-style small form-label text-white fw-bold mb-2">Email Address</label>
+                    <input id="contact-email" type="email" class="form-control custom-input py-2 px-3 border-0" placeholder="your.email@example.com" autocomplete="email">
                   </div>
                   <div class="col-12 mt-3">
-                    <label class="form-label-style small form-label text-white fw-bold mb-2">Subject</label>
-                    <select class="form-select custom-input py-2 px-3 border-0 text-secondary">
-                      <option selected>General Inquiry</option>
+                    <label for="contact-subject" class="form-label-style small form-label text-white fw-bold mb-2">Subject</label>
+                    <select id="contact-subject" class="form-select custom-input py-2 px-3 border-0 text-secondary">
+                      <option value="" selected>General Inquiry</option>
                       <option value="1">Support</option>
                       <option value="2">Feedback</option>
                     </select>
                   </div>
                   <div class="col-12 mt-3">
-                    <label class="form-label-style small form-label text-white fw-bold mb-2">Message</label>
-                    <textarea class="resize-none form-control custom-input border-0" rows="4" placeholder="Tell us how we can help you..."></textarea>
+                    <label for="contact-message" class="form-label-style small form-label text-white fw-bold mb-2">Message</label>
+                    <textarea id="contact-message" class="resize-none form-control custom-input border-0" rows="4" placeholder="Tell us how we can help you..."></textarea>
                   </div>
                   <div class="col-12 mt-3 mb-1">
                     <div class="form-check d-flex align-items-center gap-2">
@@ -1099,8 +1104,8 @@
                     </div>
                   </div>
                   <div class="col-12 mt-4">
-                    <button type="button" class="submit-btn-style btn w-100 py-3 fw-bold fs-6 d-flex justify-content-center align-items-center gap-2 rounded-2 submit-btn">
-                      Send Message <i class="fa-solid fa-paper-plane"></i>
+                    <button type="submit" class="submit-btn-style btn w-100 py-3 fw-bold fs-6 d-flex justify-content-center align-items-center gap-2 rounded-2 submit-btn" aria-label="Send your message">
+                      Send Message <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
                     </button>
                   </div>
                 </div>
@@ -1131,25 +1136,25 @@
         <div class="row gy-5 justify-content-between">
           <!-- Brand & Info -->
           <div class="col-12 col-lg-4 pe-lg-5">
-            <a href="#" class="navbar-brand d-flex align-items-center gap-2 mb-4 text-decoration-none">
-              <i class="fs-3 fa-solid fa-gamepad custom-brand-icon fs-2"></i>
-              <span class="navbar-logo fs-4 text-primary fs-5">GameArena</span>
+            <a href="#" class="navbar-brand d-flex align-items-center gap-2 mb-4 text-decoration-none" aria-label="GameArena - back to top">
+              <i class="fs-3 fa-solid fa-gamepad custom-brand-icon fs-2" aria-hidden="true"></i>
+              <span class="navbar-logo fs-4 text-primary fs-5" aria-hidden="true">GameArena</span>
             </a>
             <p class="footer-desc-style small lh-base mb-4">
               The ultimate destination for competitive gaming, esports tournaments, and gaming community.
             </p>
             <div class="d-flex gap-4">
-              <a href="#" class="text-white text-decoration-none footer-social opacity-75"><i class="fa-brands fa-x-twitter fs-5"></i></a>
-              <a href="#" class="text-white text-decoration-none footer-social opacity-75"><i class="fa-brands fa-facebook fs-5"></i></a>
-              <a href="#" class="text-white text-decoration-none footer-social opacity-75"><i class="fa-brands fa-instagram fs-5"></i></a>
-              <a href="#" class="text-white text-decoration-none footer-social opacity-75"><i class="fa-brands fa-youtube fs-5"></i></a>
-              <a href="#" class="text-white text-decoration-none footer-social opacity-75"><i class="fa-brands fa-twitch fs-5"></i></a>
+              <a href="#" aria-label="Follow us on X (Twitter)" class="text-white text-decoration-none footer-social opacity-75"><i class="fa-brands fa-x-twitter fs-5" aria-hidden="true"></i></a>
+              <a href="#" aria-label="Follow us on Facebook" class="text-white text-decoration-none footer-social opacity-75"><i class="fa-brands fa-facebook fs-5" aria-hidden="true"></i></a>
+              <a href="#" aria-label="Follow us on Instagram" class="text-white text-decoration-none footer-social opacity-75"><i class="fa-brands fa-instagram fs-5" aria-hidden="true"></i></a>
+              <a href="#" aria-label="Subscribe on YouTube" class="text-white text-decoration-none footer-social opacity-75"><i class="fa-brands fa-youtube fs-5" aria-hidden="true"></i></a>
+              <a href="#" aria-label="Watch us on Twitch" class="text-white text-decoration-none footer-social opacity-75"><i class="fa-brands fa-twitch fs-5" aria-hidden="true"></i></a>
             </div>
           </div>
           
           <!-- Games -->
           <div class="col-6 col-md-3 col-lg-2">
-            <h5 class="heading-font fs-5 text-white fw-bold mb-4">Games</h5>
+            <h3 class="heading-font fs-5 text-white fw-bold mb-4">Games</h3>
             <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
               <li><a href="#" class="text-decoration-none footer-link text-muted-custom small">VALORANT</a></li>
               <li><a href="#" class="text-decoration-none footer-link text-muted-custom small">League of Legends</a></li>
@@ -1161,7 +1166,7 @@
 
           <!-- Tournaments -->
           <div class="col-6 col-md-3 col-lg-2">
-            <h5 class="heading-font fs-5 text-white fw-bold mb-4">Tournaments</h5>
+            <h3 class="heading-font fs-5 text-white fw-bold mb-4">Tournaments</h3>
             <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
               <li><a href="#" class="text-decoration-none footer-link text-muted-custom small">Upcoming Events</a></li>
               <li><a href="#" class="text-decoration-none footer-link text-muted-custom small">Live Matches</a></li>
@@ -1173,7 +1178,7 @@
 
           <!-- Support -->
           <div class="col-6 col-md-3 col-lg-2">
-            <h5 class="heading-font fs-5 text-white fw-bold mb-4">Support</h5>
+            <h3 class="heading-font fs-5 text-white fw-bold mb-4">Support</h3>
             <ul class="list-unstyled d-flex flex-column gap-3 mb-0">
               <li><a href="#" class="text-decoration-none footer-link text-muted-custom small">Help Center</a></li>
               <li><a href="#" class="text-decoration-none footer-link text-muted-custom small">Contact Us</a></li>
